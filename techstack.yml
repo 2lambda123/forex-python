@@ -1,0 +1,82 @@
+repo_name: 2lambda123/forex-python
+report_id: 3e00faed943d72bf8811937c2b0e360f
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-09T06:54:02+00:00'
+requested_by: ashwin31
+provider: github
+branch: master
+detected_tools_count: 6
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/2lambda123/forex-python
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/2lambda123/forex-python
+  detection_source: Repo Metadata
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/2lambda123/forex-python/blob/master/setup.py
+  detection_source: setup.py
+  last_updated_by: ravi
+  last_updated_on: 2016-05-21 10:56:26.000000000 Z
+- name: Travis CI
+  description: A hosted continuous integration service for open source and private
+    projects
+  website_url: http://travis-ci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/2lambda123/forex-python/blob/master/.travis.yml
+  detection_source: ".travis.yml"
+  last_updated_by: ravi
+  last_updated_on: 2016-05-22 09:24:21.000000000 Z
+- name: requests
+  description: Python HTTP for Humans
+  package_url: https://pypi.org/project/requests
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19826/default_d7c684bf2673f008a9f02ac93901229297a22d7e.png
+  detection_source_url: https://github.com/2lambda123/forex-python/blob/master/setup.py
+  detection_source: setup.py
+  last_updated_by: ravi
+  last_updated_on: 2016-05-21 10:56:26.000000000 Z
+- name: simplejson
+  description: Simple, fast, extensible JSON encoder/decoder for Python
+  package_url: https://pypi.org/project/simplejson
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19859/default_4a8a8fdc10130068bf295812b98e9b72fb42fe70.png
+  detection_source_url: https://github.com/2lambda123/forex-python/blob/master/setup.py
+  detection_source: setup.py
+  last_updated_by: Anthony Manning-Franklin
+  last_updated_on: 2017-02-07 03:30:15.000000000 Z
