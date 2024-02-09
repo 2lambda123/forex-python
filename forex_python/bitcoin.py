@@ -9,9 +9,13 @@ class BtcConverter(object):
     Get Bitcoin rates and conversion
     """
     def __init__(self, force_decimal=False):
+        """"""
+        
         self._force_decimal = force_decimal
 
     def _decode_rates(self, response, use_decimal=False):
+        """"""
+        
         if self._force_decimal or use_decimal:
             decoded_data = json.loads(response.text, use_decimal=True)
         else:
