@@ -23,7 +23,7 @@ class BtcConverter(object):
         Get latest price of one Bitcoin to valid currency 1BTC => X USD
         """
         url = 'https://api.coindesk.com/v1/bpi/currentprice/{}.json'.format(currency)
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         if response.status_code == 200:
             data = response.json()
             price = data.get('bpi').get(currency, {}).get('rate_float', None)
@@ -44,7 +44,7 @@ class BtcConverter(object):
                    start, end, currency
                )
         )
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         if response.status_code == 200:
             data = response.json()
             price = data.get('bpi', {}).get(start, None)
@@ -65,7 +65,7 @@ class BtcConverter(object):
                    start, end, currency
                )
         )
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         if response.status_code == 200:
             data = self._decode_rates(response)
             price_dict = data.get('bpi', {})
@@ -82,7 +82,7 @@ class BtcConverter(object):
             use_decimal = self._force_decimal
 
         url = 'https://api.coindesk.com/v1/bpi/currentprice/{}.json'.format(currency)
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         if response.status_code == 200:
             data = response.json()
             price = data.get('bpi').get(currency, {}).get('rate_float', None)
@@ -106,7 +106,7 @@ class BtcConverter(object):
             use_decimal = self._force_decimal
 
         url = 'https://api.coindesk.com/v1/bpi/currentprice/{}.json'.format(currency)
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         if response.status_code == 200:
             data = response.json()
             price = data.get('bpi').get(currency, {}).get('rate_float', None)
@@ -137,7 +137,7 @@ class BtcConverter(object):
                    start, end, currency
                )
         )
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         if response.status_code == 200:
             data = response.json()
             price = data.get('bpi', {}).get(start, None)
@@ -168,7 +168,7 @@ class BtcConverter(object):
                    start, end, currency
                )
         )
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         if response.status_code == 200:
             data = response.json()
             price = data.get('bpi', {}).get(start, None)
