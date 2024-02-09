@@ -214,24 +214,21 @@ class CurrencyCodes:
     def get_symbol(self, currency_code):
         """"""
         
-        currency_dict = self._get_data(currency_code)
-        if currency_dict:
+        if currency_dict := self._get_data(currency_code):
             return currency_dict.get('symbol')
         return None
 
     def get_currency_name(self, currency_code):
         """"""
         
-        currency_dict = self._get_data(currency_code)
-        if currency_dict:
+        if currency_dict := self._get_data(currency_code):
             return currency_dict.get('name')
         return None
 
     def get_currency_code_from_symbol(self, symbol):
         """"""
         
-        currency_dict = self._get_data_from_symbol(symbol)
-        if currency_dict:
+        if currency_dict := self._get_data_from_symbol(symbol):
             return currency_dict.get('cc')
         return None
 
